@@ -31,8 +31,8 @@ export const RESUME_DATA = {
   avatarUrl: "https://avatars.githubusercontent.com/u/101664366?s=96&v=4",
   personalWebsiteUrl: "https://jarocki.me",
   contact: {
-    email: "bartosz.jarocki@hey.com",
-    tel: "+48530213401",
+    email: "chas3.crummedyo@gmail.com",
+    tel: "+17135385882",
     social: [
       {
         name: "GitHub",
