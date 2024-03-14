@@ -27,7 +27,7 @@ export const RESUME_DATA = {
   about:
     "Student of life focused on learning, growing, and building products with extra attention to detail",
   summary:
-    "As a Full Stack Engineer, I have successfully taken multiple products from 0 to 1. I lead teams effectively, ensuring an environment where people can do their best work. Currently, I work mostly with TypeScript, React, Node.js, and GraphQL. I have over 8 years of experience in working remotely with companies all around the world.",
+    "I'm an engineer and creative person. Many friends would describe me as a jack of all trades, but I believe I am strongest at learning and creating. I enjoy learning topics with meaning, not just for the sake of learning, but because there's so much to learn and not enough time to learn everything. The more I learn, the more I realize that I know nothing. Learning helps me create, and creating helps me bring my ideas to life! Leading teams to a common goal allow me to learn and create at a faster rate as well as bring the best out of others. My leadership skills translate directly to my strengths. That's a long intro lol, but I'll let you learn more about who I am as you go through my website. Enjoy!",
   avatarUrl: "https://avatars.githubusercontent.com/u/101664366?s=96&v=4",
   personalWebsiteUrl: "https://cv-alpha-ten.vercel.app/",
   contact: {
