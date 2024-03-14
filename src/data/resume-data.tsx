@@ -25,7 +25,7 @@ export const RESUME_DATA = {
   location: "Houston, TX, USA",
   locationLink: "https://www.google.com/maps/place/Houston,+TX/@29.8155408,-96.0607242,9z/data=!3m1!4b1!4m6!3m5!1s0x8640b8b4488d8501:0xca0d02def365053b!8m2!3d29.7604267!4d-95.3698028!16zL20vMDNsMm4?entry=ttu",
   about:
-    "Full Stack Engineer focused on building products with extra attention to detail",
+    "Student of life focused on learning, growing, and building products with extra attention to detail",
   summary:
     "As a Full Stack Engineer, I have successfully taken multiple products from 0 to 1. I lead teams effectively, ensuring an environment where people can do their best work. Currently, I work mostly with TypeScript, React, Node.js, and GraphQL. I have over 8 years of experience in working remotely with companies all around the world.",
   avatarUrl: "https://avatars.githubusercontent.com/u/101664366?s=96&v=4",
