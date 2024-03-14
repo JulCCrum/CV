@@ -23,7 +23,7 @@ export const RESUME_DATA = {
   name: "Julian Chase Crummedyo",
   initials: "JC",
   location: "Houston, TX, USA",
-  locationLink: "https://www.google.com/maps/place/Wrocław",
+  locationLink: "https://www.google.com/maps/place/Houston,+TX/@29.8155408,-96.0607242,9z/data=!3m1!4b1!4m6!3m5!1s0x8640b8b4488d8501:0xca0d02def365053b!8m2!3d29.7604267!4d-95.3698028!16zL20vMDNsMm4?entry=ttu",
   about:
     "Full Stack Engineer focused on building products with extra attention to detail",
   summary:
