@@ -105,13 +105,16 @@ export const RESUME_DATA = {
     },
   ],
   skills: [
-    "JavaScript",
-    "TypeScript",
-    "React/Next.js/Remix",
+    "CAD",
+    "Materials",
+    "React/Next.js",
     "Node.js",
-    "GraphQL",
-    "Relay",
-    "WebRTC",
+    "MATLAB",
+    "Project Management",
+    "Machining",
+    "Graphic design",
+    "Figma/Flutter",
+    "Social media management",
   ],
   projects: [
     {
