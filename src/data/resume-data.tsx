@@ -115,6 +115,7 @@ export const RESUME_DATA = {
     "Graphic design",
     "Figma/Flutter",
     "Social media management",
+    "Product roadmapping",
   ],
   projects: [
     {
