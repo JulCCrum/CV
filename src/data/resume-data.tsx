@@ -61,15 +61,15 @@ export const RESUME_DATA = {
   ],
   work: [
     {
-      company: "Parabol",
-      link: "https://parabol.co",
-      badges: ["Remote"],
-      title: "Senior Full Stack Developer",
+      company: "Amazon Robotics",
+      link: "https://www.aboutamazon.com/news/tag/robotics",
+      badges: ["Travel role in the US"],
+      title: "Project Engineer",
       logo: ParabolLogo,
-      start: "2021",
-      end: "2024",
+      start: "January 2023",
+      end: "June 2023",
       description:
-        "Implemented new features, led squad, worked on improving the way developers ship the code, started migration from Emotion to Tailwind CSS and more. Technologies: React, TypeScript, GraphQL",
+        "Led retrofit deployment of automated workstations (ARSAW), created onboarding and handoff documentation as well as identified cost reductions within different robot programs.",
     },
     {
       company: "Clevertech",
