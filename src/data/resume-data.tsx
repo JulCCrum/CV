@@ -126,7 +126,8 @@ export const RESUME_DATA = {
         "Next.js",
         "Javascript",
         "CSS",
-        "Hosting/Deployment",
+        "Hosting",
+        "Software"
       ],
       description: "Created this website by changing the structure, adding icons, and deploying the website",
       logo: ConsultlyLogo,
@@ -136,14 +137,13 @@ export const RESUME_DATA = {
       },
     },
     {
-      title: "Monito",
-      techStack: ["Side Project", "TypeScript", "Next.js", "Browser Extension"],
-      description:
-        "Browser extension that records everything happening in a web application",
+      title: "Ping Pong Game",
+      techStack: ["Software", "MATLAB", "Animation", "Gaming"],
+      description: "Created a single player ping pong game in MATLAB that continues until the player loses",
       logo: MonitoLogo,
       link: {
-        label: "monito.dev",
-        href: "https://monito.dev/",
+        label: "github.com/JulCCrum/Ping-Pong-game",
+        href: "https://github.com/JulCCrum/Ping-Pong-game",
       },
     },
     {
