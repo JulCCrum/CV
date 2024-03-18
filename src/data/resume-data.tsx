@@ -170,7 +170,7 @@ export const RESUME_DATA = {
     },
     {
       title: "FSAE Chassis Build",
-      techStack: ["Machining", "Welding", "Stress Analysis", "Mechanical Engineering", "Ansys", "SolidWorks"],
+      techStack: ["Machining", "Welding", "Stress Analysis", "SolidWorks", "Mechanical Engineering", "Ansys"],
       description:
         "Created chassis in SolidWorks, assisted in welding frame rods, and determined mounting points for the engine",
       logo: BarepapersLogo,
