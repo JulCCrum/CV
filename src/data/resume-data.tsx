@@ -147,35 +147,35 @@ export const RESUME_DATA = {
       },
     },
     {
-      title: "Jarocki.me",
-      techStack: ["Side Project", "Next.js", "MDX"],
+      title: "Motorized Bulletproof Podium",
+      techStack: ["SolidWorks", "Gantt Charts", "Product Life Cycle", "Project Management", "Electrical Wiring"],
       description:
-        "My personal website and blog. Built with Next.js and Notion API",
+        "Led the build of a motorized machanism that transports a 2000 lb podium 2+ mph from idea to finished product",
       logo: JarockiMeLogo,
       link: {
-        label: "github.com",
-        href: "https://jarocki.me/",
+        label: "utsacloud-my.sharepoint.com/:p:/g/personal/julian_crummedyo_my_utsa_edu/EQXbunGD4zNPs3oRAqOLS6EBFLhh5NRZeQqb9Z8SARqvmA?e=8TNLMY",
+        href: "https://utsacloud-my.sharepoint.com/:p:/g/personal/julian_crummedyo_my_utsa_edu/EQXbunGD4zNPs3oRAqOLS6EBFLhh5NRZeQqb9Z8SARqvmA?e=8TNLMY",
       },
     },
     {
-      title: "Minimal",
-      techStack: ["Side Project", "Next.js", "Puppeteer"],
+      title: "Stainless Steel Hammer",
+      techStack: ["Machining", "Drilling", "Milling", "Engineering Drawings", "Polishing", "Mechanical Engineering"],
       description:
-        "Minimalist calendars, habit trackers and planners generator",
+        "Created a 2 piece stainless steel hammer from scrap metal and engraved the hammer",
       logo: Minimal,
       link: {
-        label: "useminimal.com",
+        label: "useminimal.com", // Change link
         href: "https://useminimal.com/",
       },
     },
     {
-      title: "Barepapers",
-      techStack: ["Side Project", "Next.js", "Puppeteer"],
+      title: "FSAE Chassis Build",
+      techStack: ["Machining", "Welding", "Stress Analysis", "Mechanical Engineering", "Ansys"],
       description:
-        "Generates beautiful wallpapers using random shapes and gradients",
+        "Created chassis in SolidWorks, assisted in welding frame rods, and determined mounting points for the engine",
       logo: BarepapersLogo,
       link: {
-        label: "barepapers.com",
+        label: "barepapers.com", // Change link
         href: "https://barepapers.com/",
       },
     },
