@@ -148,7 +148,7 @@ export const RESUME_DATA = {
     },
     {
       title: "Motorized Bulletproof Podium",
-      techStack: ["SolidWorks", "Gantt Charts", "Product Life Cycle", "Project Management", "Electrical Wiring"],
+      techStack: ["SolidWorks", "Gantt Charts", "Product Life Cycle", "Project Management"],
       description:
         "Led the build of a motorized machanism that transports a 2000 lb podium 2+ mph from idea to finished product",
       logo: JarockiMeLogo,
