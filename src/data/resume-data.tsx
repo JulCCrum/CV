@@ -180,13 +180,13 @@ export const RESUME_DATA = {
       },
     },
     {
-      title: "Year progress",
-      techStack: ["Side Project", "TypeScript", "Next.js"],
-      description: "Tracks current year progress and displays a countdown",
+      title: "Sumobot",
+      techStack: ["Mechatronics", "3D Printing", "Arduino", "Wiring", "Product Design", "DFA"],
+      description: "Created a sumobot using several electrical components and added a 3D printed shovel/ramp to compete in a competition",
       logo: YearProgressLogo,
       link: {
-        label: "getyearprogress.com",
-        href: "https://getyearprogress.com/",
+        label: "getyearprogress.com", // Change link
+        href: "https://getyearprogress.com/", // Change link
       },
     },
     {
