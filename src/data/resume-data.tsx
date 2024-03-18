@@ -190,93 +190,50 @@ export const RESUME_DATA = {
       },
     },
     {
-      title: "Parabol",
+      title: "Mechanical Gearbox Design",
       techStack: [
-        "Full Stack Developer",
-        "TypeScript",
-        "React",
-        "Node.js",
-        "GraphQL",
+        "SolidWorks",
+        "FEA",
+        "Simulation",
+        "FMEA",
+        "MATLAB",
+        "Project Management",
       ],
       description:
-        "The Agile meeting co-pilot that delivers better meetings with less effort",
+        "Engineered a gearbox to interface with a motor rotating at 1200 rpm, effectively reducing speed to 155 rpm",
       logo: ParabolLogo,
       link: {
-        label: "github.com",
-        href: "https://parabol.co/",
+        label: "github.com", // Add link
+        href: "https://parabol.co/", // Change link
       },
     },
     {
-      title: "Evercast",
+      title: "Star Wars Buzzer",
       techStack: [
-        "Lead Frontend Developer",
-
-        "TypeScript",
-        "React",
-        "Node.js",
-        "GraphQL",
+        "Programming",
+        "Arduino",
+        "Wiring",
+        "Software",
+        "Hardware",
       ],
       description:
-        "Creative collaboration platform that combines video conferencing and HD media streaming",
+        "Developed a device that plays the Star Wars theme song using a buzzer if the lights in the room are off",
       logo: EvercastLogo,
       link: {
-        label: "evercast.us",
-        href: "https://www.evercast.us/",
+        label: "evercast.us", // Add link
+        href: "https://www.evercast.us/", // Add link
       },
     },
     {
-      title: "Mobile Vikings",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
+      title: "Tractor Design",
+      techStack: ["SolidWorks", "Leadership", "Engineering drawings", "Assebbly"],
       description:
-        "Android application for leading virtual mobile operator in Poland",
+        "Led a group of 4 to build of an up-to-scale tractor in SolidWorks with over 50 parts and 10 sub-assemblies",
       logo: MobileVikingsLogo,
       link: {
-        label: "mobilevikings.pl",
-        href: "https://mobilevikings.pl/",
+        label: "mobilevikings.pl", // Change link
+        href: "https://mobilevikings.pl/", // Change link
       },
-    },
-    {
-      title: "Howdy",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Howdy is a place for you to join communities you care about",
-      logo: Howdy,
-      link: {
-        label: "play.google.com",
-        href: "https://howdy.co/",
-      },
-    },
-    {
-      title: "Tastycloud",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application for managing and displaying restaurant menus in kiosk mode",
-      logo: TastyCloudLogo,
-      link: {
-        label: "tastycloud.fr",
-        href: "https://www.tastycloud.fr/",
-      },
-    },
-    {
-      title: "Ambit",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application that helps with sharing your contact details",
-      logo: AmbitLogo,
-    },
-    {
-      title: "Bim",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application that helps with booking a table in a restaurants",
-      logo: BimLogo,
-    },
-    {
-      title: "Canal Digital GO",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Video streaming mobile application for Canal Digital subscribers",
-      logo: CDGOLogo,
     },
   ],
 } as const;
