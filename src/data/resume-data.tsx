@@ -54,7 +54,7 @@ export const RESUME_DATA = {
   education: [
     {
       school: "The University of Texas at San Antonio",
-      degree: "Bachelor's Degree in Mechanical Engineering (Pursuing Master's in Computer Science with Robotics Concentration)",
+      degree: "Bachelor's Degree in Mechanical Engineering (Pursuing Master's in Mechanical Engineering with Robotics Concentration)",
       start: "2018",
       end: "2024",
     },
