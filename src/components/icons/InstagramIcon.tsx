@@ -1,4 +1,4 @@
-export const InstagramIcon = (props: React.SVGProps<SVGSVGElement>) => { // Copied from other Icon.tsx files
+export const InstagramIcon = (props: React.SVGProps<SVGSVGElement>) => { // Copied format from other Icon.tsx files
     return (
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
           <path
