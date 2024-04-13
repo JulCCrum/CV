@@ -49,6 +49,10 @@ export const RESUME_DATA = {
         url: "https://twitter.com/ChaseBank_3k",
         icon: XIcon,
       },
+      { name: "Instagram",
+        url: "https://www.instagram.com/jpautomations/",
+        icon: InstagramIcon,
+      }
     ],
   },
   education: [
