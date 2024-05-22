@@ -65,6 +65,17 @@ export const RESUME_DATA = {
   ],
   work: [
     {
+      company: "Dassault Systemes",
+      link: "https://www.3ds.com/",
+      badges: ["Boston, MA"],
+      title: "SOLIDWORKS Product Manager",
+      logo: ParabolLogo,
+      start: "May 2024",
+      end: "Present",
+      description:
+        "Focused on improving the SOLIDWORKS 3DExperience for beginner/intermediate users.",
+    },
+    {
       company: "Kiolbassa",
       link: "https://kiolbassa.com/",
       badges: ["San Antonio, TX"],
