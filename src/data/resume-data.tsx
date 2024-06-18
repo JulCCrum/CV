@@ -81,7 +81,7 @@ export const RESUME_DATA = {
       badges: ["San Antonio, TX"],
       title: "Lean Product Manager",
       logo: ParabolLogo,
-      start: "Septober 2023",
+      start: "September 2023",
       end: "December 2023",
       description:
         "Focused on restructuring product planning and procurement through lean methodologies.",
