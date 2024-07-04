@@ -179,8 +179,8 @@ export const RESUME_DATA = {
         "Created a 2 piece stainless steel hammer from scrap metal and engraved the hammer",
       logo: Minimal,
       link: {
-        label: "useminimal.com", // Change link
-        href: "https://useminimal.com/",
+        label: "canva.com", // Change link
+        href: "https://www.canva.com/design/DAFVEwg1jt0/aNHzmiyxGSRIXbGDZ3IoPg/edit?utm_content=DAFVEwg1jt0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
       },
     },
     {
@@ -190,8 +190,8 @@ export const RESUME_DATA = {
         "Created chassis in SolidWorks, assisted in welding frame rods, and determined mounting points for the engine",
       logo: BarepapersLogo,
       link: {
-        label: "barepapers.com", // Change link
-        href: "https://barepapers.com/",
+        label: "canva.com", // Change link
+        href: "https://www.canva.com/design/DAFVEwg1jt0/aNHzmiyxGSRIXbGDZ3IoPg/edit?utm_content=DAFVEwg1jt0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
       },
     },
     {
@@ -200,8 +200,8 @@ export const RESUME_DATA = {
       description: "Created a sumobot using several electrical components and added a 3D printed shovel/ramp to compete in a competition",
       logo: YearProgressLogo,
       link: {
-        label: "getyearprogress.com", // Change link
-        href: "https://getyearprogress.com/", // Change link
+        label: "canva.com", // Change link
+        href: "https://www.canva.com/design/DAF_4S8CWMY/gaoMa2yenzyloT8pbGXbYA/edit?utm_content=DAF_4S8CWMY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton", // Change link
       },
     },
     {
@@ -219,7 +219,7 @@ export const RESUME_DATA = {
       logo: ParabolLogo,
       link: {
         label: "github.com", // Add link
-        href: "https://parabol.co/", // Change link
+        href: "https://www.jccrummedyo.me/", // Change link
       },
     },
     {
@@ -235,8 +235,8 @@ export const RESUME_DATA = {
         "Developed a device that plays the Star Wars theme song using a buzzer if the lights in the room are off",
       logo: EvercastLogo,
       link: {
-        label: "evercast.us", // Add link
-        href: "https://www.evercast.us/", // Add link
+        label: "https://www.jccrummedyo.me/", // Add link
+        href: "https://www.jccrummedyo.me/", // Add link
       },
     },
     {
@@ -246,8 +246,8 @@ export const RESUME_DATA = {
         "Led a group of 4 to build of an up-to-scale tractor in SolidWorks with over 50 parts and 10 sub-assemblies",
       logo: MobileVikingsLogo,
       link: {
-        label: "mobilevikings.pl", // Change link
-        href: "https://mobilevikings.pl/", // Change link
+        label: "https://www.jccrummedyo.me/", // Change link
+        href: "https://www.canva.com/design/DAFVEwg1jt0/aNHzmiyxGSRIXbGDZ3IoPg/edit", // Change link
       },
     },
   ],
