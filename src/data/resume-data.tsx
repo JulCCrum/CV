@@ -147,8 +147,8 @@ export const RESUME_DATA = {
       description: "Created this website by changing the structure, adding icons, and deploying the website",
       logo: ConsultlyLogo,
       link: {
-        label: "cv-alpha-ten.vercel.app",
-        href: "https://cv-alpha-ten.vercel.app/",
+        label: "jccrummedyo.me",
+        href: "https://www.jccrummedyo.me/",
       },
     },
     {
