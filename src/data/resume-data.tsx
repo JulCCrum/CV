@@ -146,8 +146,8 @@ export const RESUME_DATA = {
       description: "Created an interactive page for students to search for internships utilizing V0 GenUI (still in progress)",
       logo: ConsultlyLogo,
       link: {
-        label: "Jackpotautomations",
-        href: "https://www.jackpotautomations.fyi",
+        label: "Internom8",
+        href: "https://internships-git-nextjs-migration-julccrums-projects.vercel.app/",
       },
     },
     {
