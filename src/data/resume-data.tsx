@@ -134,6 +134,23 @@ export const RESUME_DATA = {
   ],
   projects: [
     {
+      title: "Landing Page Creation",
+      techStack: [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "CSS",
+        "Vercel",
+        "Software"
+      ],
+      description: "Created a landing page for my startup from scratch using fundamentals of web development",
+      logo: ConsultlyLogo,
+      link: {
+        label: "Jackpotautomations",
+        href: "https://www.jackpotautomations.fyi",
+      },
+    },
+    {
       title: "Website Build",
       techStack: [
         "Version Control",
