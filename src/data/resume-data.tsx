@@ -134,16 +134,33 @@ export const RESUME_DATA = {
   ],
   projects: [
     {
+      title: "Internship Finder",
+      techStack: [
+        "Next.js",
+        "Javascript",
+        "CSS",
+        "Vercel V0",
+        "Software",
+        "GenUI"
+      ],
+      description: "Created an interactive page for students to search for internships utilizing V0 GenUI (still in progress)",
+      logo: ConsultlyLogo,
+      link: {
+        label: "Jackpotautomations",
+        href: "https://www.jackpotautomations.fyi",
+      },
+    },
+    {
       title: "Landing Page Creation",
       techStack: [
         "HTML",
-        "CSS",
+        "Figma",
         "Javascript",
         "CSS",
         "Vercel",
         "Software"
       ],
-      description: "Created a landing page for my startup from scratch using fundamentals of web development",
+      description: "Created a landing page for my startup from scratch using fundamentals of web development after creating a mockup in Figma",
       logo: ConsultlyLogo,
       link: {
         label: "Jackpotautomations",
