@@ -64,6 +64,17 @@ export const RESUME_DATA = {
     },
   ],
   work: [
+      {
+        company: "Amazon Robotics",
+        link: "https://www.aboutamazon.com/news/tag/robotics",
+        badges: ["Houston, TX"],
+        title: "Product Launch Engineer",
+        logo: ParabolLogo,
+        start: "October 2024",
+        end: "Present",
+        description:
+          "Focused on launching of new robotics systems into Amazon fullfilment centers.",
+      },
     {
       company: "Dassault Systemes",
       link: "https://www.3ds.com/",
@@ -71,7 +82,7 @@ export const RESUME_DATA = {
       title: "SOLIDWORKS Product Manager Intern",
       logo: ParabolLogo,
       start: "May 2024",
-      end: "Present",
+      end: "August 2024",
       description:
         "Focused on improving the SOLIDWORKS 3DExperience for beginner/intermediate users.",
     },
