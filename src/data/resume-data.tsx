@@ -145,6 +145,22 @@ export const RESUME_DATA = {
   ],
   projects: [
     {
+      title: "Moneym8",
+      techStack: [
+        "SwiftUI",
+        "Claude",
+        "OpenAI API",
+        "Firebase",
+        "Software"
+      ],
+      description: "Created an expense tracking app. This will turn into an automated situational financial assistant",
+      logo: ConsultlyLogo,
+      link: {
+        label: "Internom8",
+        href: "https://internships-git-nextjs-migration-julccrums-projects.vercel.app/",
+      },
+    },
+    {
       title: "Internship Finder",
       techStack: [
         "Next.js",
