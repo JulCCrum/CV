@@ -32,7 +32,6 @@ export const RESUME_DATA = {
   personalWebsiteUrl: "https://cv-alpha-ten.vercel.app/",
   contact: {
     email: "chas3.crummedyo@gmail.com",
-    tel: "+17135385882",
     social: [
       {
         name: "GitHub",
@@ -44,15 +43,6 @@ export const RESUME_DATA = {
         url: "https://www.linkedin.com/in/julian-crummedyo/",
         icon: LinkedInIcon,
       },
-      {
-        name: "X",
-        url: "https://twitter.com/ChaseBank_3k",
-        icon: XIcon,
-      },
-      { name: "Instagram",
-        url: "https://www.instagram.com/jpautomations/",
-        icon: InstagramIcon,
-      }
     ],
   },
   education: [
@@ -156,25 +146,25 @@ export const RESUME_DATA = {
       description: "Created an expense tracking app. This will turn into an automated situational financial assistant",
       logo: ConsultlyLogo,
       link: {
-        label: "Internom8",
-        href: "https://internships-git-nextjs-migration-julccrums-projects.vercel.app/",
+        label: "App Store",
+        href: "https://apps.apple.com/us/app/moneym8/id6743419433",
       },
     },
     {
-      title: "Internship Finder",
+      title: "Virtual Fitting Room",
       techStack: [
+        "Claude Code",
+        "Replicate API",
+        "Google Gemini API",
         "Next.js",
-        "Javascript",
-        "CSS",
-        "Vercel V0",
-        "Software",
-        "GenUI"
+        "TypeScript",
+        "AI/ML"
       ],
-      description: "Created an interactive page for students to search for internships utilizing V0 GenUI (still in progress)",
+      description: "Built a tool that allows anyone to try on clothes found online from a screenshot or link",
       logo: ConsultlyLogo,
       link: {
-        label: "Internom8",
-        href: "https://internships-git-nextjs-migration-julccrums-projects.vercel.app/",
+        label: "github.com",
+        href: "https://github.com/JulCCrum/ClothingTryOn",
       },
     },
     {
