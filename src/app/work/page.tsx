@@ -1059,11 +1059,9 @@ export default function WorkPage() {
             <div className="process-step"><span className="step-num">[4]</span> Launch</div>
           </div>
           <div className="mission-text">
-            {"Everyone has been given skills and talents... You may not know it,"}
-            <span className="indent">{"but you've had them since you were a kid."}</span>
-            <br />
-            {"My goal is to help you out with utilizing or even helping you find"}
-            <span className="indent">your skills and talents to make a positive difference.</span>
+            {"Everyone has been given skills and talents... You may not know it, but you've had them since you were a kid."}
+            <br /><br />
+            {"My goal is to help you out with utilizing or even helping you find your skills and talents to make a positive difference."}
           </div>
           <div className="terminal-bottom">
             <span>1 place</span>
