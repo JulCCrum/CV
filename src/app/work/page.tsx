@@ -1059,11 +1059,11 @@ export default function WorkPage() {
             <div className="process-step"><span className="step-num">[4]</span> Launch</div>
           </div>
           <div className="mission-text">
-            Jackpot Automations creates opportunities for the builders, the dreamers,
-            <span className="indent">and the self-starters who want to make money their own way.</span>
+            {"Everyone has been given skills and talents... You may not know it,"}
+            <span className="indent">{"but you've had them since you were a kid."}</span>
             <br />
-            By building software, AI systems, and automations that solve real problems,
-            <span className="indent">we turn skills into income and ideas into products.</span>
+            {"My goal is to help you out with utilizing or even helping you find"}
+            <span className="indent">your skills and talents to make a positive difference.</span>
           </div>
           <div className="terminal-bottom">
             <span>1 place</span>
