@@ -806,6 +806,23 @@ export default function WorkPage() {
       navContactEl?.addEventListener("click", openContact);
       ctaButtonEl?.addEventListener("click", openContact);
       contactClose?.addEventListener("click", closeContact);
+      // Send → mailto
+      const contactSend = document.getElementById("contactSend");
+      const onSend = (e: Event) => {
+        e.preventDefault();
+        const firstName = (document.getElementById("cfFirstName") as HTMLInputElement)?.value || "";
+        const lastName = (document.getElementById("cfLastName") as HTMLInputElement)?.value || "";
+        const email = (document.getElementById("cfEmail") as HTMLInputElement)?.value || "";
+        const phone = (document.getElementById("cfPhone") as HTMLInputElement)?.value || "";
+        const message = (document.getElementById("cfMessage") as HTMLTextAreaElement)?.value || "";
+        const subject = encodeURIComponent(`Contact from ${firstName} ${lastName}`.trim());
+        const body = encodeURIComponent(
+          `Name: ${firstName} ${lastName}\nEmail: ${email}\nPhone: ${phone}\n\n${message}`
+        );
+        window.location.href = `mailto:julian.crummedyo@gmail.com?subject=${subject}&body=${body}`;
+      };
+      contactSend?.addEventListener("click", onSend);
+
       // Close on Escape
       const onEsc = (e: KeyboardEvent) => {
         if (e.key === "Escape") closeContact();
@@ -945,6 +962,7 @@ export default function WorkPage() {
         navContactEl?.removeEventListener("click", openContact);
         ctaButtonEl?.removeEventListener("click", openContact);
         contactClose?.removeEventListener("click", closeContact);
+        contactSend?.removeEventListener("click", onSend);
         document.removeEventListener("keydown", onEsc);
         st.kill();
         ScrollTrigger.getAll().forEach((t: any) => t.kill());
@@ -1235,30 +1253,30 @@ export default function WorkPage() {
                 {"If you're interested in any form of collaboration, please send us an email and we'll get back shortly."}
               </p>
               <div className="work-inquiries">For work inquires:</div>
-              <div className="work-email">chas3.crummedyo@gmail.com</div>
+              <div className="work-email">julian.crummedyo@gmail.com</div>
             </div>
             <div className="contact-right">
               <div className="contact-row">
                 <div className="contact-field">
-                  <input type="text" placeholder="First Name" />
+                  <input type="text" placeholder="First Name" id="cfFirstName" />
                 </div>
                 <div className="contact-field">
-                  <input type="text" placeholder="Last Name" />
+                  <input type="text" placeholder="Last Name" id="cfLastName" />
                 </div>
               </div>
               <div className="contact-row">
                 <div className="contact-field">
-                  <input type="email" placeholder="Email" />
+                  <input type="email" placeholder="Email" id="cfEmail" />
                 </div>
                 <div className="contact-field">
-                  <input type="tel" placeholder="Phone Number" />
+                  <input type="tel" placeholder="Phone Number" id="cfPhone" />
                 </div>
               </div>
               <div className="contact-field">
-                <textarea placeholder="Message" />
+                <textarea placeholder="Message" id="cfMessage" />
               </div>
               <div className="contact-send-wrap">
-                <button className="contact-send">Send</button>
+                <button className="contact-send" id="contactSend">Send</button>
               </div>
             </div>
           </div>
