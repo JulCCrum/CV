@@ -384,6 +384,79 @@ a { color:inherit; text-decoration:none; cursor:none; }
 .footer-links a:hover { color:var(--text); }
 .footer-center { font-family:var(--display); font-weight:800; font-size:12px; color:var(--text-dim); }
 
+/* ========== CONTACT MODAL ========== */
+.contact-overlay {
+  position:fixed; inset:0; z-index:600;
+  background:var(--bg);
+  background-image:
+    linear-gradient(var(--grid-line) 1px,transparent 1px),
+    linear-gradient(90deg,var(--grid-line) 1px,transparent 1px);
+  background-size:var(--grid-size) var(--grid-size);
+  opacity:0; pointer-events:none;
+  transition:opacity 0.5s ease;
+  overflow-y:auto; cursor:none;
+}
+.contact-overlay.open { opacity:1; pointer-events:auto; }
+.contact-inner {
+  min-height:100vh; padding:120px 80px 40px;
+  display:flex; flex-direction:column;
+}
+.contact-header {
+  display:flex; justify-content:space-between; align-items:center;
+  margin-bottom:60px;
+}
+.contact-header-left { font-size:12px; color:var(--text-dim); }
+.contact-header-left::before { content:'\\25CF '; color:var(--accent); }
+.contact-header-right { font-size:12px; color:var(--text-muted); }
+.contact-body { display:flex; gap:80px; flex:1; }
+.contact-left { flex:1; max-width:400px; }
+.contact-left p {
+  font-size:13px; line-height:1.8; color:var(--text-dim); margin-bottom:30px;
+}
+.contact-left .work-inquiries { font-size:12px; color:var(--text-dim); margin-bottom:8px; }
+.contact-left .work-email { font-size:13px; color:var(--text); }
+.contact-right { flex:1; display:flex; flex-direction:column; gap:30px; }
+.contact-row { display:flex; gap:30px; }
+.contact-row > .contact-field { flex:1; }
+.contact-field { position:relative; }
+.contact-field input, .contact-field textarea {
+  width:100%; background:transparent; border:none;
+  border-bottom:1px solid var(--text-dim);
+  color:var(--text); font-family:var(--mono); font-size:12px;
+  padding:10px 0; outline:none; cursor:none; resize:none;
+}
+.contact-field textarea { min-height:120px; border-bottom:1px solid var(--text-dim); }
+.contact-field input::placeholder, .contact-field textarea::placeholder {
+  color:var(--text-muted); font-family:var(--mono); font-size:12px;
+}
+.contact-field input:focus, .contact-field textarea:focus {
+  border-bottom-color:var(--accent);
+}
+.contact-send-wrap { display:flex; justify-content:flex-end; margin-top:40px; }
+.contact-send {
+  padding:14px 40px; border:1px solid var(--text-dim); border-radius:30px;
+  background:transparent; color:var(--text); font-family:var(--mono); font-size:12px;
+  cursor:none; transition:all 0.3s;
+}
+.contact-send:hover { background:var(--text); color:var(--bg); }
+.contact-bottom {
+  display:flex; justify-content:space-between; align-items:center;
+  margin-top:auto; padding-top:60px; font-size:10px; color:var(--text-muted);
+}
+.contact-location { display:flex; align-items:center; gap:8px; }
+.contact-close {
+  position:fixed; top:30px; right:40px; z-index:610;
+  font-size:24px; color:var(--text-dim); background:none; border:none;
+  cursor:none; transition:color 0.3s; font-family:var(--mono);
+}
+.contact-close:hover { color:var(--text); }
+
+/* ========== ABOUT TRANSITION ========== */
+.about-transition {
+  position:fixed; inset:0; z-index:550;
+  background:var(--bg); opacity:0; pointer-events:none;
+}
+
 @media(max-width:768px) {
   .process-steps { position:relative; right:auto; top:auto; transform:none; margin-top:40px; gap:24px; }
   .process-step:nth-child(n) { margin-left:0; }
@@ -394,6 +467,9 @@ a { color:inherit; text-decoration:none; cursor:none; }
   .cta-circle { width:300px; height:300px; }
   .monitor { width:260px; height:220px; }
   .shelf { width:380px; }
+  .contact-inner { padding:100px 20px 30px; }
+  .contact-body { flex-direction:column; gap:40px; }
+  .contact-row { flex-direction:column; gap:20px; }
 }
 `;
 
@@ -677,6 +753,65 @@ export default function WorkPage() {
         else navEl.classList.remove("convex");
       }
 
+      /* ========== NAV: PROJECTS (smooth scroll) ========== */
+      const navProjects = document.getElementById("navProjects");
+      const onProjectsClick = (e: Event) => {
+        e.preventDefault();
+        document.getElementById("projectsSection")?.scrollIntoView({ behavior: "smooth" });
+      };
+      navProjects?.addEventListener("click", onProjectsClick);
+
+      /* ========== NAV: ABOUT (no-signal transition → resume) ========== */
+      const navAbout = document.getElementById("navAbout");
+      const aboutTransition = document.getElementById("aboutTransition");
+      const onAboutClick = (e: Event) => {
+        e.preventDefault();
+        if (!staticCanvas || !aboutTransition) return;
+        // Trigger full-screen static
+        staticActive = true;
+        staticOpacity = 0.9;
+        staticCanvas.style.opacity = "0.9";
+        staticCanvas.style.zIndex = "9999";
+        // Flash
+        staticCanvas.style.filter = "brightness(3)";
+        setTimeout(() => { if (staticCanvas) staticCanvas.style.filter = ""; }, 120);
+        // After static plays, fade to black then navigate
+        setTimeout(() => {
+          aboutTransition.style.opacity = "1";
+          aboutTransition.style.zIndex = "9999";
+          staticActive = false;
+          staticOpacity = 0;
+        }, 800);
+        setTimeout(() => {
+          window.location.href = "/";
+        }, 1400);
+      };
+      navAbout?.addEventListener("click", onAboutClick);
+
+      /* ========== CONTACT MODAL ========== */
+      const contactOverlay = document.getElementById("contactOverlay");
+      const contactClose = document.getElementById("contactClose");
+      const navContactEl = document.getElementById("navContact");
+      const ctaButtonEl = document.getElementById("ctaButton");
+
+      function openContact(e: Event) {
+        e.preventDefault();
+        contactOverlay?.classList.add("open");
+        document.body.style.overflow = "hidden";
+      }
+      function closeContact() {
+        contactOverlay?.classList.remove("open");
+        document.body.style.overflow = "";
+      }
+      navContactEl?.addEventListener("click", openContact);
+      ctaButtonEl?.addEventListener("click", openContact);
+      contactClose?.addEventListener("click", closeContact);
+      // Close on Escape
+      const onEsc = (e: KeyboardEvent) => {
+        if (e.key === "Escape") closeContact();
+      };
+      document.addEventListener("keydown", onEsc);
+
       /* ========== GSAP SCROLL ANIMATIONS ========== */
       const gridBg = document.getElementById("gridBg");
       const crtFrame = document.getElementById("crtFrame");
@@ -805,6 +940,12 @@ export default function WorkPage() {
         toggleWrap?.removeEventListener("click", onToggle);
         window.removeEventListener("resize", onResizeStatic);
         window.removeEventListener("resize", onResizeSnake);
+        navProjects?.removeEventListener("click", onProjectsClick);
+        navAbout?.removeEventListener("click", onAboutClick);
+        navContactEl?.removeEventListener("click", openContact);
+        ctaButtonEl?.removeEventListener("click", openContact);
+        contactClose?.removeEventListener("click", closeContact);
+        document.removeEventListener("keydown", onEsc);
         st.kill();
         ScrollTrigger.getAll().forEach((t: any) => t.kill());
       };
@@ -852,9 +993,9 @@ export default function WorkPage() {
 
       <nav className="nav light" id="nav">
         <div className="nav-left">
-          <a href="#" className="nav-link"><span className="dot" /> About</a>
-          <a href="#" className="nav-link"><span className="dot" /> Projects</a>
-          <a href="#" className="nav-link"><span className="dot" /> Contact</a>
+          <a href="#" className="nav-link" id="navAbout"><span className="dot" /> About</a>
+          <a href="#projectsSection" className="nav-link" id="navProjects"><span className="dot" /> Projects</a>
+          <a href="#" className="nav-link" id="navContact"><span className="dot" /> Contact</a>
         </div>
         <div className="nav-center">JA</div>
         <div className="nav-right">
@@ -1067,7 +1208,7 @@ export default function WorkPage() {
               their skills into income through technology.
             </p>
           </div>
-          <a href="#" className="cta-button" id="ctaButton">
+          <a href="#" className="cta-button" id="ctaButton" data-contact="true">
             Get In Touch
           </a>
         </section>
@@ -1081,6 +1222,58 @@ export default function WorkPage() {
           <div style={{ opacity: 0.5 }}>Built by Julian Crummedyo</div>
         </footer>
       </div>
+
+      {/* Contact Modal */}
+      <div className="contact-overlay" id="contactOverlay">
+        <button className="contact-close" id="contactClose">&times;</button>
+        <div className="contact-inner">
+          <div className="contact-header">
+            <div className="contact-header-left">Contact Us</div>
+            <div className="contact-header-right">For connection with us</div>
+          </div>
+          <div className="contact-body">
+            <div className="contact-left">
+              <p>
+                {"If you're interested in any form of collaboration, please send us an email and we'll get back shortly."}
+              </p>
+              <div className="work-inquiries">For work inquires:</div>
+              <div className="work-email">chas3.crummedyo@gmail.com</div>
+            </div>
+            <div className="contact-right">
+              <div className="contact-row">
+                <div className="contact-field">
+                  <input type="text" placeholder="First Name" />
+                </div>
+                <div className="contact-field">
+                  <input type="text" placeholder="Last Name" />
+                </div>
+              </div>
+              <div className="contact-row">
+                <div className="contact-field">
+                  <input type="email" placeholder="Email" />
+                </div>
+                <div className="contact-field">
+                  <input type="tel" placeholder="Phone Number" />
+                </div>
+              </div>
+              <div className="contact-field">
+                <textarea placeholder="Message" />
+              </div>
+              <div className="contact-send-wrap">
+                <button className="contact-send">Send</button>
+              </div>
+            </div>
+          </div>
+          <div className="contact-bottom">
+            <div className="contact-location">
+              <span>&#127760;</span> Texas / USA
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* About transition overlay */}
+      <div className="about-transition" id="aboutTransition" />
     </>
   );
 }
