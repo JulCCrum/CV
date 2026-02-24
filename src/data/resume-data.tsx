@@ -151,6 +151,22 @@ export const RESUME_DATA = {
       },
     },
     {
+      title: "MVPSalesBuddy",
+      techStack: [
+        "Next.js",
+        "TypeScript",
+        "Claude",
+        "AI/ML",
+        "Software"
+      ],
+      description: "AI-powered sales call coaching - upload audio, get instant feedback",
+      logo: ConsultlyLogo,
+      link: {
+        label: "github.com",
+        href: "https://github.com/JulCCrum/mvpsalesbuddy",
+      },
+    },
+    {
       title: "Virtual Fitting Room",
       techStack: [
         "Claude Code",
@@ -181,7 +197,7 @@ export const RESUME_DATA = {
       logo: ConsultlyLogo,
       link: {
         label: "Jackpotautomations",
-        href: "https://www.jackpotautomations.fyi",
+        href: "https://jackpotautomations.com/",
       },
     },
     {
