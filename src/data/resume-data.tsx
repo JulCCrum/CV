@@ -151,6 +151,21 @@ export const RESUME_DATA = {
       },
     },
     {
+      title: "Mirrorm8",
+      techStack: [
+        "SwiftUI",
+        "macOS",
+        "AVFoundation",
+        "Software"
+      ],
+      description: "A native macOS screen recording app with floating circular camera overlay",
+      logo: ConsultlyLogo,
+      link: {
+        label: "github.com",
+        href: "https://github.com/JulCCrum/Mirrorm8",
+      },
+    },
+    {
       title: "MVPSalesBuddy",
       techStack: [
         "Next.js",
