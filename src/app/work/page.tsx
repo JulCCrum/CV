@@ -1134,6 +1134,38 @@ export default function WorkPage() {
                       </div>
                     </div>
                   </div>
+                  <a href="https://github.com/JulCCrum/Mirrorm8" target="_blank" rel="noopener noreferrer" className="project-card">
+                    <div className="project-card-tag">Shipped</div>
+                    <div
+                      className="project-card-image"
+                      style={{ background: "linear-gradient(135deg,#1a1a2e,#16213e 50%,#0f3460)" }}
+                    >
+                      <span className="project-icon">🎥</span>
+                    </div>
+                    <div className="project-card-info">
+                      <div className="project-card-title">Mirrorm8</div>
+                      <div className="project-card-subtitle">macOS Screen Recording</div>
+                      <div className="project-card-desc">
+                        Native macOS screen and video recording app with floating circular camera overlay.
+                      </div>
+                    </div>
+                  </a>
+                  <a href="https://github.com/JulCCrum/mvpsalesbuddy" target="_blank" rel="noopener noreferrer" className="project-card">
+                    <div className="project-card-tag">Shipped</div>
+                    <div
+                      className="project-card-image"
+                      style={{ background: "linear-gradient(135deg,#0f0c29,#302b63 50%,#24243e)" }}
+                    >
+                      <span className="project-icon">🎙️</span>
+                    </div>
+                    <div className="project-card-info">
+                      <div className="project-card-title">MVPSalesBuddy</div>
+                      <div className="project-card-subtitle">AI Sales Coach</div>
+                      <div className="project-card-desc">
+                        AI-powered sales coach — upload audio or a link to a call, get instant feedback.
+                      </div>
+                    </div>
+                  </a>
                   <div className="project-card">
                     <div className="project-card-tag">Shipped</div>
                     <div
@@ -1151,37 +1183,53 @@ export default function WorkPage() {
                     </div>
                   </div>
                   <div className="project-card">
+                    <div className="project-card-tag">In Development</div>
                     <div
                       className="project-card-image"
-                      style={{ background: "linear-gradient(135deg,#1a1a2e,#e94560)" }}
+                      style={{ background: "linear-gradient(135deg,#0b0b0d,#1a1a2e 50%,#2d2d44)" }}
                     >
-                      <span className="project-icon">⚡</span>
+                      <span className="project-icon">📈</span>
                     </div>
                     <div className="project-card-info">
-                      <div className="project-card-title">The Build</div>
-                      <div className="project-card-subtitle">Custom Apps &amp; AI Systems</div>
+                      <div className="project-card-title">Trading Bot</div>
+                      <div className="project-card-subtitle">Algorithmic Trading</div>
                       <div className="project-card-desc">
-                        High-ticket custom software, AI integrations, and automation workflows.
+                        Automated trading bot for executing strategies in the market.
                       </div>
                     </div>
                   </div>
                   <div className="project-card">
+                    <div className="project-card-tag">Shipped</div>
                     <div
                       className="project-card-image"
-                      style={{ background: "linear-gradient(135deg,#0f0c29,#302b63 50%,#24243e)" }}
+                      style={{ background: "linear-gradient(135deg,#1a1a1a,#333 50%,#555)" }}
                     >
-                      <span className="project-icon">🧰</span>
+                      <span className="project-icon">🛡️</span>
                     </div>
                     <div className="project-card-info">
-                      <div className="project-card-title">The Toolkit</div>
-                      <div className="project-card-subtitle">
-                        Presentations &amp; Automations
-                      </div>
+                      <div className="project-card-title">Motorized Bulletproof Podium</div>
+                      <div className="project-card-subtitle">Mechanical Engineering</div>
                       <div className="project-card-desc">
-                        Mid-ticket deliverables: decks, automations, engineering solutions.
+                        Motorized bulletproof podium build for ballistic protection.
                       </div>
                     </div>
                   </div>
+                  <a href="https://github.com/JulCCrum/coach-jay-fitness" target="_blank" rel="noopener noreferrer" className="project-card">
+                    <div className="project-card-tag">Shipped</div>
+                    <div
+                      className="project-card-image"
+                      style={{ background: "linear-gradient(135deg,#1a1a2e,#e94560)" }}
+                    >
+                      <span className="project-icon">🌐</span>
+                    </div>
+                    <div className="project-card-info">
+                      <div className="project-card-title">Website Templates w/ Chatbot</div>
+                      <div className="project-card-subtitle">AI Web Development</div>
+                      <div className="project-card-desc">
+                        AI-powered fitness coaching website with integrated chatbot.
+                      </div>
+                    </div>
+                  </a>
                   <div className="project-card">
                     <div className="project-card-tag">Coming Soon</div>
                     <div
@@ -1191,7 +1239,7 @@ export default function WorkPage() {
                       <span className="project-icon">📖</span>
                     </div>
                     <div className="project-card-info">
-                      <div className="project-card-title">The New Money Playbook</div>
+                      <div className="project-card-title">The Digital Renaissance Playbook</div>
                       <div className="project-card-subtitle">Lead Magnet / Guide</div>
                       <div className="project-card-desc">
                         Money fundamentals, skill monetization, and AI as a force multiplier.
