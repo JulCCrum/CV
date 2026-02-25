@@ -138,12 +138,11 @@ export const RESUME_DATA = {
       title: "Moneym8",
       techStack: [
         "SwiftUI",
+        "Plaid API",
         "Claude",
-        "OpenAI API",
-        "Firebase",
         "Software"
       ],
-      description: "Created an expense tracking app. This will turn into an automated situational financial assistant",
+      description: "App to help with situational finances",
       logo: ConsultlyLogo,
       link: {
         label: "App Store",
@@ -158,7 +157,7 @@ export const RESUME_DATA = {
         "AVFoundation",
         "Software"
       ],
-      description: "A native macOS screen recording app with floating circular camera overlay",
+      description: "A native macOS screen and video recording app with floating circular camera overlay",
       logo: ConsultlyLogo,
       link: {
         label: "github.com",
@@ -170,11 +169,11 @@ export const RESUME_DATA = {
       techStack: [
         "Next.js",
         "TypeScript",
-        "Claude",
-        "AI/ML",
-        "Software"
+        "RecallAI",
+        "Whisper API",
+        "Claude"
       ],
-      description: "AI-powered sales call coaching - upload audio, get instant feedback",
+      description: "AI-powered sales coach - upload audio or a link to a call, get instant feedback",
       logo: ConsultlyLogo,
       link: {
         label: "github.com",
@@ -191,7 +190,7 @@ export const RESUME_DATA = {
         "TypeScript",
         "AI/ML"
       ],
-      description: "Built a tool that allows anyone to try on clothes found online from a screenshot or link",
+      description: "Virtual try-on tool — try on clothes found online from a screenshot or link",
       logo: ConsultlyLogo,
       link: {
         label: "github.com",
@@ -208,7 +207,7 @@ export const RESUME_DATA = {
         "Vercel",
         "Software"
       ],
-      description: "Created a landing page for my startup from scratch using fundamentals of web development after creating a mockup in Figma",
+      description: "Landing page for my startup, built from scratch using web development fundamentals and a Figma mockup",
       logo: ConsultlyLogo,
       link: {
         label: "Jackpotautomations",
@@ -226,7 +225,7 @@ export const RESUME_DATA = {
         "Hosting",
         "Software"
       ],
-      description: "Created this website by changing the structure, adding icons, and deploying the website",
+      description: "Personal portfolio website with custom structure, icons, and deployment",
       logo: ConsultlyLogo,
       link: {
         label: "jccrummedyo.me",
