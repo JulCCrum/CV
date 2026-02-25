@@ -17,7 +17,7 @@ import {
   TastyCloudLogo,
   YearProgressLogo,
 } from "@/images/logos";
-import { GitHubIcon, LinkedInIcon, XIcon, InstagramIcon } from "@/components/icons";
+import { GitHubIcon, LinkedInIcon, XIcon, InstagramIcon, PalmTreeIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
   name: "Julian Chase Crummedyo",
@@ -42,6 +42,11 @@ export const RESUME_DATA = {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/julian-crummedyo/",
         icon: LinkedInIcon,
+      },
+      {
+        name: "Work",
+        url: "/work",
+        icon: PalmTreeIcon,
       },
     ],
   },
